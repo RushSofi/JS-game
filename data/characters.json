@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "name": "Rain",
+    "hp": 100,
+    "avatarPath": "http://localhost:3001/assets/players/avatar/1.png",
+    "gifPath": "http://localhost:3001/assets/players/fightingStance/rain.gif"
+  },
+  {
+    "id": 2,
+    "name": "Reptile",
+    "hp": 100,
+    "avatarPath": "http://localhost:3001/assets/players/avatar/2.png",
+    "gifPath": "http://localhost:3001/assets/players/fightingStance/reptile.gif"
+  },
+  {
+    "id": 3,
+    "name": "Stryker",
+    "hp": 100,
+    "avatarPath": "http://localhost:3001/assets/players/avatar/3.png",
+    "gifPath": "http://localhost:3001/assets/players/fightingStance/stryker.gif"
+  },
+  {
+    "id": 4,
+    "name": "Jax",
+    "hp": 100,
+    "avatarPath": "http://localhost:3001/assets/players/avatar/4.png",
+    "gifPath": "http://localhost:3001/assets/players/fightingStance/jax.gif"
+  },
+  {
+    "id": 5,
+    "name": "Nightwolf",
+    "hp": 100,
+    "avatarPath": "http://localhost:3001/assets/players/avatar/5.png",
+    "gifPath": "http://localhost:3001/assets/players/fightingStance/nightwolf.gif"
+  },
+  {
+    "id": 6,
+    "name": "Jade",
+    "hp": 100,
+    "avatarPath": "http://localhost:3001/assets/players/avatar/6.png",
+    "gifPath": "http://localhost:3001/assets/players/fightingStance/jade.gif"
+  },
+  {
+    "id": 7,
+    "name": "Noob Saibot",
+    "hp": 100,
+    "avatarPath": "http://localhost:3001/assets/players/avatar/7.png",
+    "gifPath": "http://localhost:3001/assets/players/fightingStance/noobsaibot.gif"
+  },
+  {
+    "id": 8,
+    "name": "Sonya",
+    "hp": 100,
+    "avatarPath": "http://localhost:3001/assets/players/avatar/8.png",
+    "gifPath": "http://localhost:3001/assets/players/fightingStance/sonya.gif"
+  },
+  {
+    "id": 9,
+    "name": "Kano",
+    "hp": 100,
+    "avatarPath": "http://localhost:3001/assets/players/avatar/9.png",
+    "gifPath": "http://localhost:3001/assets/players/fightingStance/kano.gif"
+  },
+  {
+    "id": 10,
+    "name": "Mileena",
+    "hp": 100,
+    "avatarPath": "http://localhost:3001/assets/players/avatar/10.png",
+    "gifPath": "http://localhost:3001/assets/players/fightingStance/mileena.gif"
+  },
+  {
+    "id": 11,
+    "name": "Empty player",
+    "hp": 100,
+    "avatarPath": "http://localhost:3001/assets/players/avatar/11.png",
+    "gifPath": ""
+  },
+  {
+    "id": 12,
+    "name": "Sheeva",
+    "hp": 100,
+    "avatarPath": "http://localhost:3001/assets/players/avatar/12.png",
+    "gifPath": "http://localhost:3001/assets/players/fightingStance/sheeva.gif"
+  },
+  {
+    "id": 13,
+    "name": "Subzero",
+    "hp": 100,
+    "avatarPath": "http://localhost:3001/assets/players/avatar/13.png",
+    "gifPath": "http://localhost:3001/assets/players/fightingStance/subzero.gif"
+  },
+  {
+    "id": 14,
+    "name": "Kunglao",
+    "hp": 100,
+    "avatarPath": "http://localhost:3001/assets/players/avatar/14.png",
+    "gifPath": "http://localhost:3001/assets/players/fightingStance/kunglao.gif"
+  },
+  {
+    "id": 15,
+    "name": "Sektor",
+    "hp": 100,
+    "avatarPath": "http://localhost:3001/assets/players/avatar/15.png",
+    "gifPath": "http://localhost:3001/assets/players/fightingStance/sektor.gif"
+  },
+  {
+    "id": 16,
+    "name": "Kitana",
+    "hp": 100,
+    "avatarPath": "http://localhost:3001/assets/players/avatar/16.png",
+    "gifPath": "http://localhost:3001/assets/players/fightingStance/kitana.gif"
+  },
+  {
+    "id": 17,
+    "name": "Ermac",
+    "hp": 100,
+    "avatarPath": "http://localhost:3001/assets/players/avatar/17.png",
+    "gifPath": "http://localhost:3001/assets/players/fightingStance/ermac.gif"
+  },
+  {
+    "id": 18,
+    "name": "Scorpion",
+    "hp": 100,
+    "avatarPath": "http://localhost:3001/assets/players/avatar/18.png",
+    "gifPath": "http://localhost:3001/assets/players/fightingStance/scorpion.gif"
+  },
+  {
+    "id": 19,
+    "name": "Cyrax",
+    "hp": 100,
+    "avatarPath": "http://localhost:3001/assets/players/avatar/19.png",
+    "gifPath": "http://localhost:3001/assets/players/fightingStance/cyrax.gif"
+  },
+  {
+    "id": 20,
+    "name": "Kabal",
+    "hp": 100,
+    "avatarPath": "http://localhost:3001/assets/players/avatar/20.png",
+    "gifPath": "http://localhost:3001/assets/players/fightingStance/kabal.gif"
+  },
+  {
+    "id": 21,
+    "name": "Sindel",
+    "hp": 100,
+    "avatarPath": "http://localhost:3001/assets/players/avatar/21.png",
+    "gifPath": "http://localhost:3001/assets/players/fightingStance/sindel.gif"
+  },
+  {
+    "id": 22,
+    "name": "Smoke",
+    "hp": 100,
+    "avatarPath": "http://localhost:3001/assets/players/avatar/22.png",
+    "gifPath": "http://localhost:3001/assets/players/fightingStance/smoke.gif"
+  },
+  {
+    "id": 23,
+    "name": "Liu Kang",
+    "hp": 100,
+    "avatarPath": "http://localhost:3001/assets/players/avatar/23.png",
+    "gifPath": "http://localhost:3001/assets/players/fightingStance/liukang.gif"
+  },
+  {
+    "id": 24,
+    "name": "Shang Tsung",
+    "hp": 100,
+    "avatarPath": "http://localhost:3001/assets/players/avatar/24.png",
+    "gifPath": "http://localhost:3001/assets/players/fightingStance/shangtsung.gif"
+  }
+]
