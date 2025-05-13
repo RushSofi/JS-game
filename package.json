@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node src/server.js",
     "coverage": "jest --coverage --collectCoverageFrom='./game.js' --collectCoverageFrom='./player.js'",
+    "test": "jest",
     "test:memory": "node --expose-gc ./__tests__/memory-load.js",
     "start:verbose": "cross-env DEBUG=game*,player*,battle* node src/server.js",
     "start:errors": "cross-env DEBUG=error* node src/server.js"
