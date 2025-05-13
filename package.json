@@ -4,15 +4,37 @@
   "description": "В данном документе представлены пошаговые задания, необходимые для выполнения вашего проекта. Также приложена видеозапись, которая может помочь в освоении материала. Вы можете найти её по следующей ссылке:",
   "main": "index.js",
   "scripts": {
-    "start": "node src/server.js"
+    "start": "node src/server.js",
+    "coverage": "jest --coverage --collectCoverageFrom='./game.js' --collectCoverageFrom='./player.js'",
+    "test:memory": "node --expose-gc ./__tests__/memory-load.js",
+    "start:verbose": "cross-env DEBUG=game*,player*,battle* node src/server.js",
+    "start:errors": "cross-env DEBUG=error* node src/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "debug": "^4.4.0",
     "dotenv": "^16.4.7",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "loglevel": "^1.9.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/plugin-transform-modules-commonjs": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "@eslint/js": "^9.22.0",
+    "@types/jest": "^29.5.14",
+    "babel-jest": "^29.7.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.22.0",
+    "globals": "^15.15.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-puppeteer": "^11.0.0",
+    "jsdom": "^26.0.0",
+    "prettier": "^3.5.1",
+    "puppeteer": "^24.8.0"
   }
 }
-

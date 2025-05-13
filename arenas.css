@@ -409,3 +409,124 @@ input[type=radio]:checked + label > span::before {
 input[type=radio]:checked + label > span:hover {
     background: none;
 }
+
+.arena-option {
+    width: 150px;
+    height: 100px;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.arena-option:hover {
+    transform: scale(1.1);
+}
+
+.selected-arena {
+    border: 3px solid red;
+    opacity: 0.8;
+}
+
+.stats {
+    position: absolute;
+    top: 20px;
+    left: -200px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Mortal Kombat 3';
+    z-index: 1000;
+}
+
+.stats h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.stats p {
+    margin: 5px 0;
+}
+
+#resetStats {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #f5d100;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Mortal Kombat 3';
+    font-size: 14px;
+}
+
+#resetStats:hover {
+    background-color: #cd0e03;
+    color: white;
+}
+
+.achievements {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Mortal Kombat 3';
+    z-index: 1000;
+}
+
+.achievements h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.rating {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Mortal Kombat 3';
+    z-index: 1000;
+}
+
+@keyframes hitAnimation {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
+
+.hit-animation {
+    animation: hitAnimation 0.5s ease;
+}
+
+@keyframes levelUpAnimation {
+    0% { opacity: 0; transform: scale(0.5); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+.level-up {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: #f5d100;
+    font-family: 'Mortal Kombat 3';
+    animation: levelUpAnimation 1s ease;
+}
+
+.hint {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Mortal Kombat 3';
+    z-index: 1000;
+}

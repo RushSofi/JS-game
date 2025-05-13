@@ -1,0 +1,6 @@
+projectKey=Fight-game
+serverUrl=http://localhost:9000
+serverVersion=25.2.0.102705
+dashboardUrl=http://localhost:9000/dashboard?id=Fight-game
+ceTaskId=af2a6d1d-bc91-4426-88dc-946324b1ac48
+ceTaskUrl=http://localhost:9000/api/ce/task?id=af2a6d1d-bc91-4426-88dc-946324b1ac48

@@ -1,0 +1,3 @@
+scenario,heapDelta_MB,rssDelta_MB,timeMs,usedJSHeap_MB,domNodes
+single_fight,0.47,2.67,3122,3.81,46
+rapid_reload,0.03,2.80,1766,5.68,68

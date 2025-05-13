@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Player Class createPlayer() should generate valid DOM structure 1`] = `
+<div
+  class="player1"
+>
+  <div
+    class="progressbar"
+  >
+    <div
+      class="life"
+      style="width: 100%;"
+    />
+    <div
+      class="name"
+    >
+      Scorpion
+    </div>
+  </div>
+  <div
+    class="character"
+  >
+    <img
+      src="test.gif"
+    />
+  </div>
+</div>
+`;
