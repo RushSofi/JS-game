@@ -25,7 +25,7 @@ jobs:
         run: npm install
 
       - name: Запускаем модульные тесты
-        run: npm test
+        run: npx jest
 
       - name: Анализ кода через ESLint
         run: npx eslint . --ext .js --quiet || true
