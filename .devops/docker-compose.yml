@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  frontend:
+    build:
+      context: ..
+      dockerfile: .devops/Dockerfile.frontend
+    ports:
+      - "5500:5500"
+    volumes:
+      - ../:/app
+    networks:
+      - appnet
+
+  backend:
+    build:
+      context: ..
+      dockerfile: .devops/Dockerfile.backend
+    ports:
+      - "3001:3001"
+    volumes:
+      - ../:/app
+    networks:
+      - appnet
+
+networks:
+  appnet:

@@ -1,0 +1,18 @@
+# Dockerfile.backend
+FROM node:20-alpine
+
+# Создаём рабочую папку внутри контейнера
+WORKDIR /app
+
+# Копируем package.json и устанавливаем зависимости
+COPY package*.json ./ 
+RUN npm install
+
+# Копируем остальной код
+COPY . .
+
+# Указываем порт, на котором запускается сервер
+EXPOSE 3001
+
+# Команда запуска
+CMD ["npm", "start"]
