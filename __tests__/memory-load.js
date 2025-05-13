@@ -127,7 +127,7 @@ async function testInvalidInput(page) {
 
   const browser = await puppeteer.launch({
     headless: true,
-    args: ['--js-flags="--expose-gc"']
+    args: ['--no-sandbox','--js-flags="--expose-gc"']
   });
   const page = await browser.newPage();
 
