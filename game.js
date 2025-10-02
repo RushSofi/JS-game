@@ -38,7 +38,7 @@ export default class Game {
   addXP(amount) {
     this.playerLevel.xp += amount;
     gameLogger.info(`Добавлено ${amount} XP (итого: ${this.playerLevel.xp}/100)`);
-    if (this.playerLevel.level >= 10) return;
+    if (this.playerLevel.level >= 10) {return;}
     if (this.playerLevel.xp >= 100) {
       this.playerLevel.level += 1;
       this.playerLevel.xp = 0;
@@ -65,7 +65,7 @@ export default class Game {
 
   loadStats() {
     const stats = localStorage.getItem('mkStats');
-    if (!stats) return { wins: 0, losses: 0, draws: 0 };
+    if (!stats) {return { wins: 0, losses: 0, draws: 0 };}
     
     const parsed = JSON.parse(stats);
     // Гарантируем наличие всех полей
@@ -83,8 +83,8 @@ export default class Game {
       const num = Number(value);
       
       // Обрабатываем особые случаи
-      if (!Number.isFinite(num)) return 0; // NaN, Infinity, -Infinity
-      if (num <= 0) return 0;
+      if (!Number.isFinite(num)) {return 0;} // NaN, Infinity, -Infinity
+      if (num <= 0) {return 0;}
       return Math.min(num, Number.MAX_SAFE_INTEGER);
     };
   
@@ -224,7 +224,7 @@ export default class Game {
   processAttack(attacker, defender, attack, defend) {
     // Добавляем проверку
     gameLogger.debug(`Обработка атаки от ${attacker.name} → ${defender.name}`);
-    if (!defender || !attacker) return;
+    if (!defender || !attacker) {return;}
     
     const defenderEl = defender.elHP();
     if (defenderEl && defenderEl.style) {

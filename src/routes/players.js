@@ -11,6 +11,8 @@ const getRandomPlayer = (players) => {
 
 const getRandomValue = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
+const { fightsCounter } = require('../../monitoring_/exporter');
+
 router.get('/players', (req, res) => {
   console.log(`Получен запрос на список игроков: ${req.method} ${req.originalUrl}`);
   const filePath = path.join(__dirname, '../../data/characters.json');
@@ -39,6 +41,7 @@ router.get('/player', (req, res) => {
 });
 
 router.post('/player/fight', (req, res) => {
+  fightsCounter.inc(); 
   console.log(`Запрос на бой: ${req.method} ${req.originalUrl}, данные:`, req.body);
 
   const { hit, defence } = req.body;

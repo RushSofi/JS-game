@@ -20,7 +20,7 @@ export default class Player {
     try {
       const el = document.querySelector(`.player${this.player} .life`);
       return el || { style: { width: '0%' } }; // Всегда возвращаем объект с style
-    } catch (e) {
+    } catch {
       return { style: { width: '0%' } };
     }
   }

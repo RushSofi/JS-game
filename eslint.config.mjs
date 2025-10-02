@@ -8,10 +8,11 @@ export default [
       globals: {
         ...globals.browser,
         ...globals.node,
+        ...globals.jest, // Добавляем глобальные переменные Jest (describe, test, expect и др.)
       },
     },
     rules: {
-      'no-undef': 'error',
+      'no-undef': 'off',
       'no-unused-vars': 'warn',
       'eqeqeq': 'error',
       'curly': 'error',

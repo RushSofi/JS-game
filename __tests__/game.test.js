@@ -117,7 +117,7 @@ describe('Game Class', () => {
     });
     
     test('saveStats should normalize values', () => {
-      game.stats = { wins: "10", losses: null, draws: "abc" };
+      game.stats = { wins: '10', losses: null, draws: 'abc' };
       
       Storage.prototype.getItem.mockReturnValueOnce(null);
       game.saveStats();

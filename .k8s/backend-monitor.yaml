@@ -1,0 +1,17 @@
+# backend-monitor.yaml
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: backend-monitor
+  namespace: monitoring
+  labels:
+    release: prometheus
+spec:
+  selector:
+    matchLabels:
+      prometheus.io/scrape: "true"  # Совпадает с Service
+  endpoints:
+  - port: http  # Точное имя порта!
+    path: /metrics
+    interval: 10s
+    honorLabels: true

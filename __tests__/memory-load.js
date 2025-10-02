@@ -1,4 +1,3 @@
-// memory-load.js
 import puppeteer from 'puppeteer';
 import fs from 'fs';
 import path from 'path';
@@ -46,7 +45,7 @@ async function rapidReload(page) {
 async function restartFight(page) {
   await page.evaluate(() => {
     const btn = document.querySelector('.reloadWrap .button');
-    if (btn) btn.click();
+    if (btn) {btn.click();}
   });
 
   await page.waitForFunction(() => {
@@ -108,7 +107,7 @@ async function testInvalidInput(page) {
 
   await page.evaluate(() => {
     const btn = document.querySelector('.reloadWrap .button');
-    if (btn) btn.click();
+    if (btn) {btn.click();}
   });
 
   await delay(500);

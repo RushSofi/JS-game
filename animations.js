@@ -1,7 +1,7 @@
 import { createElement } from './utils.js';
 
 export function animateHit(target) {
-  if (!target || !target.classList) return; // Защитная проверка
+  if (!target || !target.classList) {return;} // Защитная проверка
   target.classList.add('hit-animation');
   setTimeout(() => {
     target.classList.remove('hit-animation');
